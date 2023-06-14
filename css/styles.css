@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Helventica Neue Cyr";
+  src: url("../fonts/HelveticaNeueCyr-Light.ttf");
+  font-style: Light;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Helventica Neue Cyr";
+  src: url("../fonts/HelveticaNeueCyr-Medium.ttf");
+  font-style: Medium;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Helventica Neue Cyr";
+  src: url("../fonts/HelveticaNeueCyr-Black.ttf");
+  font-style: Black;
+  font-weight: 800;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helventica Neue Cyr";
+  font-size: 18px;
+  font-weight: 300;
+}
