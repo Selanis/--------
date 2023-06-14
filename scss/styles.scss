@@ -1,3 +1,5 @@
+@import "animate.css";
+
 @font-face {
   font-family: 'Helventica Neue Cyr';
   src: url("../fonts/HelveticaNeueCyr-Light.ttf");
@@ -70,8 +72,48 @@ body {
       }
     }
     
-    .main-cotainer {
+    .main-container {
       @extend %size;
+      min-height: 981px;
+      max-width: 1920px;
+      background: url("../photos/main-pict/main.png") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .strows {
+        width: 100%;
+        max-width: 1800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
       
+      #right-main {
+        rotate: 180deg;
+      }
+    }
+
+    .main-bars {
+      margin-bottom: 33px;
+      margin-top: -39px;
+      display: flex;
+      justify-content: center;
+
+      .white-main-bar {
+        @extend %size;
+        max-width: 1200px;
+        min-height: 6px;
+        background: white;
+      }
+
+      .gradient-main-bar {
+        height: 100%;
+        width: 10%;
+        max-width: 1200px;
+        min-height: 6px;
+        background: linear-gradient(270deg, #BEE154 0%, #489FDF 47.36%, #001F61 100%);
+        // background-color: #489FDF;
+      }
     }
 }
