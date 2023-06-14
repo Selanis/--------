@@ -34,8 +34,44 @@ $dark-blue: #001F61;
   font-family: 'Helventica Neue Cyr';
   font-size: 18px;
   font-weight: 300;
+  color: #001F61;
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+    nav {
+      @extend %size;
+      background-color: $green;
+      min-height: 73px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .nav-container {
+        @extend %size;
+        max-width: 1439px;
+        min-height: 51px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 588px;
+        }
+      }
+    }
     
+    .main-cotainer {
+      @extend %size;
+      
+    }
 }
