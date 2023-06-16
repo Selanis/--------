@@ -90,6 +90,22 @@ body {
           justify-content: space-between;
           width: 100%;
           max-width: 588px;
+
+          a:link {
+            text-decoration: none;
+          }
+
+          li {
+            cursor: pointer;
+          }
+
+          li:hover {
+            color: $blue;
+          }
+        }
+
+        img {
+          cursor: pointer;
         }
       }
     }
@@ -98,6 +114,7 @@ body {
       @extend %size;
       min-height: 845px;
       max-width: 1920px;
+      transition: 1s all;
     }
 
     #main-first {
@@ -148,6 +165,8 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+      z-index: 100;
       
 
       .strows {
@@ -157,6 +176,10 @@ body {
         flex-direction: row;
         justify-content: space-between;
         margin-top: -835px;
+
+        img {
+          cursor: pointer;
+        }
       }
       
     }
@@ -167,6 +190,8 @@ body {
       margin-top: -39px;
       display: flex;
       justify-content: center;
+      position: relative;
+      z-index: 100;
 
       .white-main-bar {
         @extend %size;
@@ -181,6 +206,10 @@ body {
         min-height: 6px;
         background: linear-gradient(270deg, #BEE154 0%, #489FDF 47.36%, #001F61 100%);
         transition: width 0.5s;
+      }
+
+      .animate__animated.animate__slideInRight {
+        animation-duration: 1s;
       }
 
       .bar1 {
@@ -232,9 +261,144 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .ability-text {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+
+        .text-in-ability {
+          margin-left: -108px;
+          margin-top: 60px;
+          
+          &__text {
+            background-color: $dark-blue;
+
+            h3 {
+              color: white;
+              max-width: 555px;
+              padding-left: 76px;
+              padding-top: 56px;
+              padding-bottom: 76px;
+              padding-right: 56px;
+            }
+          }
+
+          .dec-abilities {
+            margin-top: 24px;
+            margin-left: 96px;
+            @extend %size;
+            max-width: 204px;
+            max-height: 60px;
+            border: none;
+            background-color: $blue;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .stat {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @extend %size;
+      max-width: 1063px;
+
+      h4 {
+        max-width: 261px;
+
+        span {
+          font-size: 75px;
+          font-weight: 800;
+          color: $green;
+        }
+        p {
+          font-size: 20px;
+          margin-top: -34px;
+          // font-weight: 500;
+        }
+      }
+    }
+
+    .brands-you-know {
+      @extend %size;
+      max-width: 1583px;
+      min-height: 534px;
+      margin-top: 118px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid $dark-blue;
+
+      h1 {
+        max-width: 748px;
+        text-align: center;
+      }
+
+      .you-know {
+        @extend %size;
+        overflow: hidden;
+        max-width: 1466px;
+        max-height: 392px;
+        display: flex;
+        flex-direction: row;
+
+        .rec {
+          @extend %size;
+          max-width: 422px;
+          min-height: 288px;
+          background: #BEE154;
+          margin: 10px;
+        }
+      } 
+
+      
+    }
+
+    .products-with {
+      @extend %size;
+      max-width: 1198px;
+      min-height: 821px;
+      margin-top: 120px;
+      border: 1px solid $dark-blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        max-width: 955px;
+        text-align: center;
+      }
+
+      .products-grid {
+        @extend %size;
+        max-width: 1200px;
+        min-height: 680px;
+        
+      }
     }
 
     .hidden {
       display: none;
     }
+
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 4px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $green;
+  // border: 1px solid $dark-blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $dark-blue;
+}
+

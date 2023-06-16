@@ -17,7 +17,7 @@
   font-style: Black;
   font-weight: 800;
 }
-body .ability-for-everyone, body .main-bars .white-main-bar, body .main-bars, body .buttons, body .main-container, body nav .nav-container, body nav {
+body .products-with .products-grid, body .products-with, body .brands-you-know .you-know .rec, body .brands-you-know .you-know, body .brands-you-know, body .stat, body .ability-for-everyone .ability-text .text-in-ability .dec-abilities, body .ability-for-everyone, body .main-bars .white-main-bar, body .main-bars, body .buttons, body .main-container, body nav .nav-container, body nav {
   width: 100%;
   height: 100%;
 }
@@ -104,9 +104,23 @@ body nav .nav-container ul {
   width: 100%;
   max-width: 588px;
 }
+body nav .nav-container ul a:link {
+  text-decoration: none;
+}
+body nav .nav-container ul li {
+  cursor: pointer;
+}
+body nav .nav-container ul li:hover {
+  color: #489FDF;
+}
+body nav .nav-container img {
+  cursor: pointer;
+}
 body .main-container {
   min-height: 845px;
   max-width: 1920px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 body #main-first {
   background: url("../photos/main-pict/main1.png") center/cover no-repeat;
@@ -154,6 +168,8 @@ body .buttons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 100;
 }
 body .buttons .strows {
   width: 100%;
@@ -170,6 +186,9 @@ body .buttons .strows {
           justify-content: space-between;
   margin-top: -835px;
 }
+body .buttons .strows img {
+  cursor: pointer;
+}
 body .main-bars {
   margin-bottom: 33px;
   margin-top: -39px;
@@ -179,6 +198,8 @@ body .main-bars {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 100;
 }
 body .main-bars .white-main-bar {
   max-width: 1200px;
@@ -193,6 +214,10 @@ body .main-bars .gradient-main-bar {
   background: linear-gradient(270deg, #BEE154 0%, #489FDF 47.36%, #001F61 100%);
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
+}
+body .main-bars .animate__animated.animate__slideInRight {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 body .main-bars .bar1 {
   width: 10%;
@@ -239,6 +264,143 @@ body .ability-for-everyone {
       -ms-flex-align: center;
           align-items: center;
 }
+body .ability-for-everyone .ability-text {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .ability-for-everyone .ability-text .text-in-ability {
+  margin-left: -108px;
+  margin-top: 60px;
+}
+body .ability-for-everyone .ability-text .text-in-ability__text {
+  background-color: #001F61;
+}
+body .ability-for-everyone .ability-text .text-in-ability__text h3 {
+  color: white;
+  max-width: 555px;
+  padding-left: 76px;
+  padding-top: 56px;
+  padding-bottom: 76px;
+  padding-right: 56px;
+}
+body .ability-for-everyone .ability-text .text-in-ability .dec-abilities {
+  margin-top: 24px;
+  margin-left: 96px;
+  max-width: 204px;
+  max-height: 60px;
+  border: none;
+  background-color: #489FDF;
+  color: white;
+  cursor: pointer;
+}
+body .stat {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1063px;
+}
+body .stat h4 {
+  max-width: 261px;
+}
+body .stat h4 span {
+  font-size: 75px;
+  font-weight: 800;
+  color: #BEE154;
+}
+body .stat h4 p {
+  font-size: 20px;
+  margin-top: -34px;
+}
+body .brands-you-know {
+  max-width: 1583px;
+  min-height: 534px;
+  margin-top: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #001F61;
+}
+body .brands-you-know h1 {
+  max-width: 748px;
+  text-align: center;
+}
+body .brands-you-know .you-know {
+  overflow: hidden;
+  max-width: 1466px;
+  max-height: 392px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .brands-you-know .you-know .rec {
+  max-width: 422px;
+  min-height: 288px;
+  background: #BEE154;
+  margin: 10px;
+}
+body .products-with {
+  max-width: 1198px;
+  min-height: 821px;
+  margin-top: 120px;
+  border: 1px solid #001F61;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .products-with h1 {
+  max-width: 955px;
+  text-align: center;
+}
+body .products-with .products-grid {
+  max-width: 1200px;
+  min-height: 680px;
+}
 body .hidden {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 4px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #BEE154;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #001F61;
 }

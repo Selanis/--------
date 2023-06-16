@@ -7,14 +7,18 @@
     <title>Главная</title>
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="photos/main-pict/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <img class="gradient-logo" src="photos/main-pict/gradient-logo-nav.svg" alt="gradient-logo" />
+            <a href="index.html">
+                <img class="gradient-logo" src="photos/main-pict/gradient-logo-nav.svg" alt="gradient-logo" />
+            </a>
 
             <ul>
-                <li>О компании</li>
+                <a href="pages/about.html"><li>О компании</li></a>
                 <li>Новости</li>
                 <li>Вакансии</li>
                 <li>Ru | En</li>
@@ -25,7 +29,7 @@
     <section class="main-container animate__animated" id="main-first">
     </section>
 
-    <section class="main-container animate__animated hidden" id="main-second">
+    <section class="main-container animate__animated hidden " id="main-second">
     </section>
 
     <section class="main-container animate__animated hidden" id="main-third">
@@ -68,8 +72,55 @@
     <section class="ability-for-everyone">
         <h1>Возможности для каждого</h1>
         
+        <div class="ability-text">
+            <img src="photos/main-pict/abilities-picture.png" alt="picture" />
+
+            <div class="text-in-ability">
+                <div class="text-in-ability__text">
+                    <h3>«Градиент» — одна из ведущих компаний 
+                        на&nbsp;российском рынке FMCG. Начав свою деятельность в 1991 году как дистрибьюторская компания, «Градиент» получил возможность применить и переосмыслить лучший мировой 
+                        опыт в маркетинге, логистике, сервисных 
+                        и&nbsp;информационных системах. И сегодня её основной фокус – создание и развитие 
+                        собственных брендов как для внутреннего,
+                        так&nbsp;и&nbsp;мировых рынков.</h3>
+                </div>
+                <a href="pages/about.html">
+                    <button class="dec-abilities">Наша история</button>
+                </a>
+            </div>
+        </div>
     </section>
 
+    <section class="stat">
+        <h4><span>30+</span><p>собственных брендов 
+            и&nbsp;брендов в эксклюзив-
+            ной&nbsp;дистрибуции.</p></h4>
+        <h4><span>1000+</span><p>партнеров-ритейлеров по&nbsp;всему миру.</p></h4>
+        <h4><span>1600</span><p>сотрудников.</p></h4>
+    </section>
+
+
+    <section class="brands-you-know">
+        <h1>Мы создаем бренды, которые вы точно знаете</h1>
+
+        <div class="you-know">
+            <div class="rec" id="r1"></div>
+            <div class="rec" id="r2"></div>
+            <div class="rec" id="r3"></div>
+            <div class="rec" id="r4"></div>
+            <div class="rec" id="r5"></div>
+            <div class="rec" id="r6"></div>
+            <div class="rec" id="r7"></div>
+        </div>
+    </section>
+
+    <section class="products-with">
+        <h1>Продукты, которые мы сделали совместно c Магнит Косметик</h1>
+
+        <div class="products-grid">
+            
+        </div>
+    </section>
 
     <script src="js/index.js"></script>
 </body>

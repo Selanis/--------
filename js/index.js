@@ -1,25 +1,3 @@
-// function mainSliderFuncNext(slider, sliderCount) {
-//     slider[sliderCount].classList.add('hidden');
-//     if (sliderCount > slider.length) {
-//         sliderCount == 0;
-//     } else {
-//         sliderCount++;
-//     }
-//     slider[sliderCount].classList.remove('hidden');
-//     // slider[sliderCount].classList.add('');
-// }
-
-// function mainSliderFuncBack(slider, sliderCount) {
-//     slider[sliderCount].classList.add('hidden');
-//     if (sliderCount < slider.length) {
-//         sliderCount == slider.length;
-//     } else {
-//         sliderCount--;
-//     }
-//     slider[sliderCount].classList.remove('hidden');
-//     // slider[sliderCount].classList.add('');
-// }
-
 var sliderCount = 0;
 let mainSlider = document.getElementsByClassName("main-container");
 let buttonRight = document.getElementById('right-main');
@@ -31,6 +9,7 @@ console.log(progressBar.classList);
 
 buttonRight.addEventListener('click', function () {
     mainSlider[sliderCount].classList.add('hidden');
+    
     if (sliderCount + 1 == mainSlider.length) {
         sliderCount = 0;
     } else {
@@ -39,7 +18,7 @@ buttonRight.addEventListener('click', function () {
     mainSlider[sliderCount].classList.remove('hidden');
     progressBar.classList.remove(progressBar.classList[1]);
     progressBar.classList.add("bar" + String(sliderCount + 1))
-    // slider[sliderCount].classList.add('');
+    
 });
 
 buttonLeft.addEventListener('click', function() {
@@ -52,5 +31,12 @@ buttonLeft.addEventListener('click', function() {
     mainSlider[sliderCount].classList.remove('hidden');
     progressBar.classList.remove(progressBar.classList[1]);
     progressBar.classList.add("bar" + String(sliderCount + 1))
-    // slider[sliderCount].classList.add('');
+    
 });
+
+// $('.autoplay').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//   });
