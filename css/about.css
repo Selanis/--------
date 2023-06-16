@@ -122,6 +122,9 @@ body nav .nav-container ul li {
 body nav .nav-container ul li:hover {
   color: #489FDF;
 }
+body nav .nav-container ul a:link {
+  text-decoration: none;
+}
 body .titles h1 {
   max-width: 1193px;
   text-align: center;

@@ -6,10 +6,10 @@
 }
   
 @font-face {
-font-family: 'Helventica Neue Cyr';
-src: url("../fonts/HelveticaNeueCyr-Medium.ttf");
-font-style: Medium;
-font-weight: 500;
+    font-family: 'Helventica Neue Cyr';
+    src: url("../fonts/HelveticaNeueCyr-Medium.ttf");
+    font-style: Medium;
+    font-weight: 500;
 }
 
 @font-face {
@@ -20,10 +20,10 @@ font-weight: 500;
 }
 
 @font-face {
-font-family: 'Helventica Neue Cyr';
-src: url("../fonts/HelveticaNeueCyr-Black.ttf");
-font-style: Black;
-font-weight: 800;
+    font-family: 'Helventica Neue Cyr';
+    src: url("../fonts/HelveticaNeueCyr-Black.ttf");
+    font-style: Black;
+    font-weight: 800;
 }
 
 %size {
@@ -110,6 +110,10 @@ align-items: center;
 
                 li:hover {
                     color: #489FDF;
+                }
+
+                a:link {
+                    text-decoration: none;
                 }
             }
         }
@@ -389,7 +393,7 @@ align-items: center;
                 .contacts {
                     @extend %size;
                     max-width: 301px;
-                    
+
                     h3 {
                         font-weight: 500;
                         font-size: 25px;

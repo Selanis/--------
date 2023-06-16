@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Helventica Neue Cyr';
+    src: url("../fonts/HelveticaNeueCyr-Light.ttf");
+    font-style: Light;
+    font-weight: 300;
+}
+  
+@font-face {
+    font-family: 'Helventica Neue Cyr';
+    src: url("../fonts/HelveticaNeueCyr-Medium.ttf");
+    font-style: Medium;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Helventica Neue Cyr';
+    src: url("../fonts/HelveticaNeueCyr-Bold.ttf");
+    font-style: Bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Helventica Neue Cyr';
+    src: url("../fonts/HelveticaNeueCyr-Black.ttf");
+    font-style: Black;
+    font-weight: 800;
+}
+
+%size {
+    width: 100%;
+    height: 100%;
+}
+
+$green: #BEE154;
+$blue: #489FDF;
+$dark-blue: #001F61;
+
+* {
+margin: 0px;
+padding: 0px;
+font-family: 'Helventica Neue Cyr';
+font-size: 18px;
+font-weight: 300;
+color: #001F61;
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+}
+
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+    nav {
+    @extend %size;
+    background-color: $green;
+    min-height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .nav-container {
+            @extend %size;
+            max-width: 1439px;
+            min-height: 51px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 588px;
+            
+                .underline-page {
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+
+                li {
+                    cursor: pointer;
+                }
+
+                li:hover {
+                    color: #489FDF;
+                }
+
+                a:link {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .titles {
+        margin-top: 120px;
+    }
+}
