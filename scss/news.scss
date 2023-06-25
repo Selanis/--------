@@ -126,7 +126,7 @@ align-items: center;
     .news {
         @extend %size;
         max-width: 1200px;
-        min-height: 2670px;
+        min-height: 394px;
 
         .new-container {
             margin-top: 84px;
@@ -153,9 +153,117 @@ align-items: center;
                     a {
                         font-size: 24px;
                     }
+
+                    a:hover {
+                        color: $blue;
+                    }
                 }
             }
         }
+    }
 
+    .numbers {
+        margin-top: 84px;
+        @extend %size;
+        max-width: 305px;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @extend %size;
+            max-width: 305px;
+
+            li {
+                font-size: 35px;
+                cursor: pointer;
+            }
+
+            li:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 120px;
+        @extend %size;
+        min-height: 480px;
+        background: linear-gradient(266.42deg, #BEE154 0%, #489FDF 50%, #001F61 100%), url("../photos/about-pict/gradient-logo.svg") no-repeat;
+        display: flex;
+        justify-content: center;
+
+        .gradient-footer {
+            @extend %size;
+            max-width: 1770px;
+            min-height: 480px;
+            background: url("../photos/about-pict/gradient-logo.svg") bottom left no-repeat;
+            display: flex;
+            justify-content: center;
+
+            .contacts-div {
+                @extend %size;
+                max-width: 1058px;
+                min-height: 480px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                flex-direction: column;
+
+                .contacts {
+                    @extend %size;
+                    max-width: 301px;
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 25px;
+                        color: white;
+                    }
+
+                    h4 {
+                        margin-top: 14px;
+                        color: white;
+                        line-height: 24px;
+                        max-width: 301px;
+                    }
+                }
+
+                .address {
+                    margin-top: 60px;
+                    h3 {
+                        font-weight: 500;
+                        font-size: 25px;
+                        color: white;
+                    }
+
+                    h4 {
+                        margin-top: 14px;
+                        color: white;
+                        line-height: 24px;
+                        max-width: 301px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
     }
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 4px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $green;
+    // border: 1px solid $dark-blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $dark-blue;
+}
+
