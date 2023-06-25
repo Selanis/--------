@@ -22,7 +22,7 @@
   font-style: Black;
   font-weight: 800;
 }
-body nav .nav-container, body nav {
+body .vacancy__item .main .plus .horizontal, body .vacancy__item .main .plus .vertical, body .vacancy__item .main .plus, body .vacancy__item, body .vacancy, body nav .nav-container, body nav {
   width: 100%;
   height: 100%;
 }
@@ -127,4 +127,74 @@ body nav .nav-container ul a:link {
 }
 body .titles {
   margin-top: 120px;
+}
+body .vacancy {
+  margin-top: 30px;
+  max-width: 1080px;
+}
+body .vacancy__item {
+  max-width: 1080px;
+  min-height: 132px;
+  border: 2px solid #001F61;
+  margin-top: 30px;
+  overflow-y: hidden;
+  -webkit-transition: min-height 1s;
+  transition: min-height 1s;
+}
+body .vacancy__item .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 26px;
+  padding-top: 26px;
+}
+body .vacancy__item .main h1 {
+  max-width: 924px;
+  min-height: 80px;
+}
+body .vacancy__item .main .plus {
+  max-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+body .vacancy__item .main .plus .vertical {
+  max-width: 4px;
+  min-height: 48px;
+  background-color: #001F61;
+  border-radius: 1em;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+body .vacancy__item .main .plus .horizontal {
+  max-width: 48px;
+  min-height: 4px;
+  background-color: #001F61;
+  margin-left: -26px;
+  border-radius: 1em;
+}
+body .vacancy__item .main .plus .active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+body .vacancy__item .main .plus .shown {
+  min-height: 922px;
 }
