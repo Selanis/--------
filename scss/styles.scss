@@ -381,9 +381,150 @@ body {
       }
     }
 
+    .distr-container {
+      margin-top: 123px;
+      @extend %size;
+      min-height: 1632px;
+      background: linear-gradient(225deg, #BEE154 0%, #489FDF 47.36%, #001F61 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        margin-top: 53px;
+        text-align: center;
+        max-width: 885px;
+      }
+
+      .vivienne {
+        @extend %size;
+        max-width: 1440px;
+        min-height: 1020px;
+        background-color: white;
+        margin-top: 24px;
+
+        &__img {
+          background: url('/photos/main-pict/exclusive-main.png') center/cover no-repeat;
+          @extend %size;
+          max-width: 1440px;
+          min-height: 624px;
+        }
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 60px;
+          h2 {
+            max-width: 1075px;
+            text-align: center;
+          }
+
+          button {
+            margin-top: 48px;
+            border: none;
+            background-color: $green;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 57px;
+            padding-right: 57px;
+            cursor: pointer;
+            font-size: 20px;
+          }
+
+          button:active {
+            background-color: $blue;
+            color: white;
+          }
+        }
+      }
+
+      .brands-div {
+        @extend %size;
+        max-width: 1320px;
+        min-height: 264px;
+        border: 1px solid white;
+        margin-top: 60px;
+      }
+    }
+
+    .news-container {
+      @extend %size;
+      max-width: 1080px;
+      min-height: 793px;
+      border: 1px solid $dark-blue;
+      margin-top: 87px;
+
+      h1 {
+        text-align: center;
+      }
+    }
+
     .hidden {
       display: none;
     }
+
+    footer {
+      margin-top: 120px;
+      @extend %size;
+      min-height: 480px;
+      background: linear-gradient(266.42deg, #BEE154 0%, #489FDF 50%, #001F61 100%), url("../photos/about-pict/gradient-logo.svg") no-repeat;
+      display: flex;
+      justify-content: center;
+
+      .gradient-footer {
+          @extend %size;
+          max-width: 1770px;
+          min-height: 480px;
+          background: url("../photos/about-pict/gradient-logo.svg") bottom left no-repeat;
+          display: flex;
+          justify-content: center;
+
+          .contacts-div {
+              @extend %size;
+              max-width: 1058px;
+              min-height: 480px;
+              display: flex;
+              justify-content: center;
+              align-items: end;
+              flex-direction: column;
+
+              .contacts {
+                  @extend %size;
+                  max-width: 301px;
+
+                  h3 {
+                      font-weight: 500;
+                      font-size: 25px;
+                      color: white;
+                  }
+
+                  h4 {
+                      margin-top: 14px;
+                      color: white;
+                      line-height: 24px;
+                      max-width: 301px;
+                  }
+              }
+
+              .address {
+                  margin-top: 60px;
+                  h3 {
+                      font-weight: 500;
+                      font-size: 25px;
+                      color: white;
+                  }
+
+                  h4 {
+                      margin-top: 14px;
+                      color: white;
+                      line-height: 24px;
+                      max-width: 301px;
+                  }
+              }
+          }
+      }
+  }
 
 }
 

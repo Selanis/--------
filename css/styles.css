@@ -17,7 +17,7 @@
   font-style: Black;
   font-weight: 800;
 }
-body .products-with .products-grid, body .products-with, body .brands-you-know .you-know .rec, body .brands-you-know .you-know, body .brands-you-know, body .stat, body .ability-for-everyone .ability-text .text-in-ability .dec-abilities, body .ability-for-everyone, body .main-bars .white-main-bar, body .main-bars, body .buttons, body .main-container, body nav .nav-container, body nav {
+body footer .gradient-footer .contacts-div .contacts, body footer .gradient-footer .contacts-div, body footer .gradient-footer, body footer, body .news-container, body .distr-container .brands-div, body .distr-container .vivienne__img, body .distr-container .vivienne, body .distr-container, body .products-with .products-grid, body .products-with, body .brands-you-know .you-know .rec, body .brands-you-know .you-know, body .brands-you-know, body .stat, body .ability-for-everyone .ability-text .text-in-ability .dec-abilities, body .ability-for-everyone, body .main-bars .white-main-bar, body .main-bars, body .buttons, body .main-container, body nav .nav-container, body nav {
   width: 100%;
   height: 100%;
 }
@@ -387,8 +387,153 @@ body .products-with .products-grid {
   max-width: 1200px;
   min-height: 680px;
 }
+body .distr-container {
+  margin-top: 123px;
+  min-height: 1632px;
+  background: linear-gradient(225deg, #BEE154 0%, #489FDF 47.36%, #001F61 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .distr-container h1 {
+  margin-top: 53px;
+  text-align: center;
+  max-width: 885px;
+}
+body .distr-container .vivienne {
+  max-width: 1440px;
+  min-height: 1020px;
+  background-color: white;
+  margin-top: 24px;
+}
+body .distr-container .vivienne__img {
+  background: url("/photos/main-pict/exclusive-main.png") center/cover no-repeat;
+  max-width: 1440px;
+  min-height: 624px;
+}
+body .distr-container .vivienne__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+body .distr-container .vivienne__item h2 {
+  max-width: 1075px;
+  text-align: center;
+}
+body .distr-container .vivienne__item button {
+  margin-top: 48px;
+  border: none;
+  background-color: #BEE154;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 57px;
+  padding-right: 57px;
+  cursor: pointer;
+  font-size: 20px;
+}
+body .distr-container .vivienne__item button:active {
+  background-color: #489FDF;
+  color: white;
+}
+body .distr-container .brands-div {
+  max-width: 1320px;
+  min-height: 264px;
+  border: 1px solid white;
+  margin-top: 60px;
+}
+body .news-container {
+  max-width: 1080px;
+  min-height: 793px;
+  border: 1px solid #001F61;
+  margin-top: 87px;
+}
+body .news-container h1 {
+  text-align: center;
+}
 body .hidden {
   display: none;
+}
+body footer {
+  margin-top: 120px;
+  min-height: 480px;
+  background: linear-gradient(266.42deg, #BEE154 0%, #489FDF 50%, #001F61 100%), url("../photos/about-pict/gradient-logo.svg") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body footer .gradient-footer {
+  max-width: 1770px;
+  min-height: 480px;
+  background: url("../photos/about-pict/gradient-logo.svg") bottom left no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body footer .gradient-footer .contacts-div {
+  max-width: 1058px;
+  min-height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body footer .gradient-footer .contacts-div .contacts {
+  max-width: 301px;
+}
+body footer .gradient-footer .contacts-div .contacts h3 {
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+body footer .gradient-footer .contacts-div .contacts h4 {
+  margin-top: 14px;
+  color: white;
+  line-height: 24px;
+  max-width: 301px;
+}
+body footer .gradient-footer .contacts-div .address {
+  margin-top: 60px;
+}
+body footer .gradient-footer .contacts-div .address h3 {
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+body footer .gradient-footer .contacts-div .address h4 {
+  margin-top: 14px;
+  color: white;
+  line-height: 24px;
+  max-width: 301px;
 }
 
 ::-webkit-scrollbar {
