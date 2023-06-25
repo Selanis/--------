@@ -260,6 +260,10 @@ body footer .gradient-footer .contacts-div .address h4 {
 body .hidden {
   display: none;
 }
+body .active {
+  color: #489FDF;
+  text-decoration: underline;
+}
 
 ::-webkit-scrollbar {
   width: 12px;

@@ -250,6 +250,11 @@ align-items: center;
     .hidden {
         display: none;
     }
+
+    .active {
+        color: $blue;
+        text-decoration: underline;
+    }
 }
 
 ::-webkit-scrollbar {

@@ -24,6 +24,14 @@ function NumbClicked(event) {
             listNews[i].classList.add('hidden')
         }
     }
+
+    for (i = 0; i < listNumbs.length; i++) {
+        if (listNumbs[i].classList.contains(event)) {
+            listNumbs[i].classList.add('active')
+        } else if (!listNumbs[i].classList.contains(event) & listNumbs[i].classList.contains('active')) {
+            listNumbs[i].classList.remove('active')
+        }
+    }
 }
 
 // let buttonRight = document.getElementByClassName('button-next')
