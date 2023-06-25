@@ -27,6 +27,10 @@ body footer .gradient-footer .contacts-div .contacts, body footer .gradient-foot
   height: 100%;
 }
 
+:root {
+  --index: calc(1vw + 1vh);
+}
+
 * {
   margin: 0px;
   padding: 0px;

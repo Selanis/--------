@@ -35,6 +35,10 @@ $green: #BEE154;
 $blue: #489FDF;
 $dark-blue: #001F61;
 
+:root {
+    --index: calc(1vw + 1vh);
+}
+
 * {
 margin: 0px;
 padding: 0px;
