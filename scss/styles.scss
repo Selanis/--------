@@ -331,28 +331,128 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid $dark-blue;
+      // border: 1px solid $dark-blue;
+      // overflow: hidden;
 
       h1 {
         max-width: 748px;
         text-align: center;
       }
 
-      .you-know {
+      .brands-container {
         @extend %size;
-        overflow: hidden;
-        max-width: 1466px;
-        max-height: 392px;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
-        .rec {
+        .button {
           @extend %size;
-          max-width: 422px;
-          min-height: 288px;
-          background: #BEE154;
-          margin: 10px;
+          max-width: 24px;
+          min-height: 48px;
+          background: url('../photos/main-pict/brands-button.svg') center/cover no-repeat;
+          cursor: pointer;
         }
+
+        .brands-carousel__next {
+          rotate: 180deg;
+        }
+
+        .brands-carousel {
+          overflow: hidden;
+          max-width: 1466px;
+  
+          .swiper-wrapper {
+            @extend %size;
+            max-width: 1466px;
+            min-height: 392px;
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            margin-top: 24px;
+            
+            .rec {
+              @extend %size;
+              width: 422px;
+              min-height: 288px;
+
+              margin-left: 11px;
+              margin-right: 11px;
+              transition: max-width 0.5s;
+              transition: min-height 0.5s;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .swiper-slide {
+                text-align: center;
+              }
+
+              &__pict {
+                @extend %size;
+                max-width: 552px;
+                max-height: 345px;
+                position: absolute;
+              }
+
+              &__blue {
+                @extend %size;
+                width: 552px;
+                height: 345px;
+                background-color: $blue;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                display: none;
+              }
+
+              &__green {
+                @extend %size;
+                width: 552px;
+                height: 345px;
+                border: 3px solid $green;
+                top: 0;
+                right: 0;
+                position: absolute;
+                display: none;
+              }
+            }
+    
+            .swiper-slide-active {
+              width: 578px !important;
+              min-height: 380px;
+              .rec__green {
+                display: block;
+              } 
+              .rec__blue {
+                display: block;
+              } 
+            }
+  
+            .swiper-slide-prev {
+              width: 422px !important;
+              .rec__green {
+                display: none;
+              } 
+              .rec__blue {
+                display: none;
+              } 
+              
+            }
+  
+            .swiper-slide-next {
+              width: 422px !important;
+              .rec__green {
+                display: none;
+              } 
+              .rec__blue {
+                display: none;
+              } 
+            }
+          }
+
+      }
       } 
 
       

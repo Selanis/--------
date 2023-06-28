@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="photos/main-pict/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
     <script src="js/index.js" defer></script>
     <script src="js/sliders.js" defer></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <nav>
@@ -108,16 +110,54 @@
 
     <section class="brands-you-know">
         <h1>Мы создаем бренды, которые вы точно знаете</h1>
+        <div class="brands-container">
+            <div class="brands-carousel__prev button"></div>
+            
+            <div class="brands-carousel">                
+                
+                <div class="swiper-wrapper">
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict" id="r1" style="background: url('/photos/main-pict/brands-meine.jpg') center/cover no-repeat;"></div>
+                    </div>
 
-        <div class="you-know">
-            <div class="rec" id="r1"></div>
-            <div class="rec" id="r2"></div>
-            <div class="rec" id="r3"></div>
-            <div class="rec" id="r4"></div>
-            <div class="rec" id="r5"></div>
-            <div class="rec" id="r6"></div>
-            <div class="rec" id="r7"></div>
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict swiper-slide" id="r2" style="background: url('/photos/main-pict/brands-leo.jpg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict swiper-slide" id="r3" style="background: url('/photos/main-pict/brands-urban.jpg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict swiper-slide" id="r4" style="background: url('/photos/main-pict/brands-influence.jpg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict swiper-slide" id="r5"style="background: url('/photos/main-pict/brands-skingood.jpg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict swiper-slide" id="r6" style="background: url('/photos/main-pict/brands-ottaku.jpg') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="rec swiper-slide">
+                        <div class="rec__green"></div>
+                        <div class="rec__blue"></div>
+                        <div class="rec__pict swiper-slide" id="r7" style="background: url('/photos/main-pict/brands-tanoshi.jpg') center/cover no-repeat;"></div>
+                    </div>         
+                </div>
         </div>
+        <div class="brands-carousel__next button"></div>
+
+        
+        </div>   
     </section>
 
     <section class="products-with">

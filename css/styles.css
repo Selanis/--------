@@ -17,7 +17,7 @@
   font-style: Black;
   font-weight: 800;
 }
-body footer .gradient-footer .contacts-div .contacts, body footer .gradient-footer .contacts-div, body footer .gradient-footer, body footer, body .news-container .news .news-div__img, body .news-container .news .news-div, body .news-container .news, body .news-container, body .distr-container .brands-div, body .distr-container .vivienne__img, body .distr-container .vivienne, body .distr-container, body .products-with .products-grid__item .info-grid, body .products-with .products-grid, body .products-with, body .brands-you-know .you-know .rec, body .brands-you-know .you-know, body .brands-you-know, body .stat, body .ability-for-everyone .ability-text .text-in-ability .dec-abilities, body .ability-for-everyone, body .main-bars .white-main-bar, body .main-bars, body .buttons, body .main-container, body nav .nav-container, body nav {
+body footer .gradient-footer .contacts-div .contacts, body footer .gradient-footer .contacts-div, body footer .gradient-footer, body footer, body .news-container .news .news-div__img, body .news-container .news .news-div, body .news-container .news, body .news-container, body .distr-container .brands-div, body .distr-container .vivienne__img, body .distr-container .vivienne, body .distr-container, body .products-with .products-grid__item .info-grid, body .products-with .products-grid, body .products-with, body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec__green, body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec__blue, body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec__pict, body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec, body .brands-you-know .brands-container .brands-carousel .swiper-wrapper, body .brands-you-know .brands-container .button, body .brands-you-know .brands-container, body .brands-you-know, body .stat, body .ability-for-everyone .ability-text .text-in-ability .dec-abilities, body .ability-for-everyone, body .main-bars .white-main-bar, body .main-bars, body .buttons, body .main-container, body nav .nav-container, body nav {
   width: 100%;
   height: 100%;
 }
@@ -339,16 +339,12 @@ body .brands-you-know {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #001F61;
 }
 body .brands-you-know h1 {
   max-width: 748px;
   text-align: center;
 }
-body .brands-you-know .you-know {
-  overflow: hidden;
-  max-width: 1466px;
-  max-height: 392px;
+body .brands-you-know .brands-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,12 +352,110 @@ body .brands-you-know .you-know {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-body .brands-you-know .you-know .rec {
-  max-width: 422px;
+body .brands-you-know .brands-container .button {
+  max-width: 24px;
+  min-height: 48px;
+  background: url("../photos/main-pict/brands-button.svg") center/cover no-repeat;
+  cursor: pointer;
+}
+body .brands-you-know .brands-container .brands-carousel__next {
+  rotate: 180deg;
+}
+body .brands-you-know .brands-container .brands-carousel {
+  overflow: hidden;
+  max-width: 1466px;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper {
+  max-width: 1466px;
+  min-height: 392px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec {
+  width: 422px;
   min-height: 288px;
-  background: #BEE154;
-  margin: 10px;
+  margin-left: 11px;
+  margin-right: 11px;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  -webkit-transition: min-height 0.5s;
+  transition: min-height 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec .swiper-slide {
+  text-align: center;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec__pict {
+  max-width: 552px;
+  max-height: 345px;
+  position: absolute;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec__blue {
+  width: 552px;
+  height: 345px;
+  background-color: #489FDF;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .rec__green {
+  width: 552px;
+  height: 345px;
+  border: 3px solid #BEE154;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-active {
+  width: 578px !important;
+  min-height: 380px;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-active .rec__green {
+  display: block;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-active .rec__blue {
+  display: block;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-prev {
+  width: 422px !important;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-prev .rec__green {
+  display: none;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-prev .rec__blue {
+  display: none;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-next {
+  width: 422px !important;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-next .rec__green {
+  display: none;
+}
+body .brands-you-know .brands-container .brands-carousel .swiper-wrapper .swiper-slide-next .rec__blue {
+  display: none;
 }
 body .products-with {
   max-width: 1198px;
